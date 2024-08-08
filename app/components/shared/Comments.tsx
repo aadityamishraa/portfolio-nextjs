@@ -16,7 +16,7 @@ export default function Comments() {
   return (
     <Giscus
       id="comments"
-      repo="evavic44/victoreke.com"
+      repo="aadityamishraa/portfolio-nextjs"
       repoId={giscusRepoId}
       category="Announcements"
       categoryId={giscusCategoryId}
@@ -24,7 +24,7 @@ export default function Comments() {
       term="Welcome to @giscus/react component!"
       reactionsEnabled="1"
       emitMetadata="0"
-      inputPosition="bottom"
+      inputPosition="top"
       theme={giscusTheme}
       lang="en"
       loading="lazy"

@@ -14,13 +14,13 @@ type props = {
 };
 
 export default function SharePost({ title, slug, description }: props) {
-  const blog = encodeURIComponent("https://victoreke.com/blog/");
+  const blog = encodeURIComponent("http://localhost:3000/");//change website url here
   const options = [
     {
       icon: BiLogoTwitter,
       name: "Twitter",
       shareUrl: `https://twitter.com/intent/tweet?text=${encodeURIComponent(
-        "Thank you @victoreke for writing this post."
+        "Check out this post"
       )}.%0A%0A${title}%0A%0A${blog}${slug}`,
     },
     {
@@ -37,7 +37,7 @@ export default function SharePost({ title, slug, description }: props) {
       icon: BiLogoWhatsapp,
       name: "WhatsApp",
       shareUrl: `https://api.whatsapp.com/send?text=${encodeURIComponent(
-        "Read this amazing article by Victor Eke"
+        "Read this amazing article"
       )}.%0A%0A${title}%0A%0A${blog}${slug}`,
     },
   ];

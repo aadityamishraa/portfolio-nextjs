@@ -9,7 +9,7 @@ export default async function Usage() {
     query: profileQuery,
     tags: ["profile"],
   });
-
+console.log(profile[0].usage[0].children);
   return (
     <section className="max-w-2xl">
       <div className="mb-8">

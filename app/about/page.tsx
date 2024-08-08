@@ -10,6 +10,7 @@ import Usage from "../components/pages/Usage";
 import { Slide } from "../animation/Slide";
 import { sanityFetch } from "@/lib/sanity.client";
 import RefLink from "../components/shared/RefLink";
+import Job from "../components/pages/Job";
 
 export const metadata: Metadata = {
   title: "About | Aaditya Mishra",
@@ -103,7 +104,7 @@ export default async function About() {
               </aside>
             </section>
             <Slide delay={0.14}>
-              <Usage />
+              <Job />
             </Slide>
             {/* <Heroes /> */}
           </div>
