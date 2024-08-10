@@ -21,8 +21,7 @@ const options = {
     "Aaditya Mishra is a Frontend Developer and Designer who is passionate about building solutions and contributing to open source communities",
   url: "https://aadityamishra.in",
   ogImage:
-    // "https://res.cloudinary.com/victoreke/image/upload/v1692635746/victoreke/og.png",
-    "https://res.cloudinary.com/dnxtiwx4g/image/upload/v1723281887/portfolio/igsy2sihumikpqxkrpg6.jpg"
+    "https://res.cloudinary.com/dnxtiwx4g/image/upload/v1723312991/portfolio/pj1c0ihpnba1iplmbomz.png",
 };
 
 export const metadata: Metadata = {
@@ -43,7 +42,6 @@ export const metadata: Metadata = {
   },
   other: {
     "google-site-verification": "HIwP_P0d6u_hyrHKLCdbuVYuH-5RAoa5Cc-V5lw-W9Y",
-    
   },
 };
 

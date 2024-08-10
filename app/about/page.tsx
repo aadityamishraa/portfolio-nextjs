@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description:
       "Learn more about my skills, experience and technical background",
     images:
-      "https://res.cloudinary.com/victoreke/image/upload/v1692635746/victoreke/og.png",
+      "https://res.cloudinary.com/dnxtiwx4g/image/upload/v1723312991/portfolio/pj1c0ihpnba1iplmbomz.png",
   },
 };
 
