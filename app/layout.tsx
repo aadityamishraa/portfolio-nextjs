@@ -18,10 +18,11 @@ const inter = Inter({
 const options = {
   title: "Aaditya Mishra",
   description:
-    "Victor Eke is a Software Developer and Technical Writer who is passionate about building solutions and contributing to open source communities",
-  url: "https://victoreke.com",
+    "Aaditya Mishra is a Frontend Developer and Designer who is passionate about building solutions and contributing to open source communities",
+  url: "https://aadityamishra.in",
   ogImage:
-    "https://res.cloudinary.com/victoreke/image/upload/v1692635746/victoreke/og.png",
+    // "https://res.cloudinary.com/victoreke/image/upload/v1692635746/victoreke/og.png",
+    "https://res.cloudinary.com/dnxtiwx4g/image/upload/v1723281887/portfolio/igsy2sihumikpqxkrpg6.jpg"
 };
 
 export const metadata: Metadata = {
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: options.title,
     url: options.url,
-    siteName: "victoreke.com",
+    siteName: "aadityamishra.in",
     locale: "en-US",
     type: "website",
     description: options.description,
@@ -41,7 +42,8 @@ export const metadata: Metadata = {
     canonical: options.url,
   },
   other: {
-    "google-site-verification": "IzcWMgn5Qjf-LCtA337KTGjivsf9bmod_1pZ-jxYQh8",
+    "google-site-verification": "HIwP_P0d6u_hyrHKLCdbuVYuH-5RAoa5Cc-V5lw-W9Y",
+    
   },
 };
 

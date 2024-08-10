@@ -3,10 +3,8 @@ import { Metadata } from "next";
 import { profileQuery } from "@/lib/sanity.query";
 import type { ProfileType } from "@/types";
 import { PortableText } from "@portabletext/react";
-import { BiEnvelope, BiLinkExternal, BiSolidDownload } from "react-icons/bi";
+import { BiLinkExternal, BiSolidDownload } from "react-icons/bi";
 import { CustomPortableText } from "../components/shared/CustomPortableText";
-import Heroes from "../components/pages/Heroes";
-import Usage from "../components/pages/Usage";
 import { Slide } from "../animation/Slide";
 import { sanityFetch } from "@/lib/sanity.client";
 import RefLink from "../components/shared/RefLink";
@@ -14,12 +12,12 @@ import Job from "../components/pages/Job";
 
 export const metadata: Metadata = {
   title: "About | Aaditya Mishra",
-  metadataBase: new URL("http://localhost:3000/about"),
+  metadataBase: new URL("https://aadityamishra.in/about"),
   description:
     "Learn more about my skills, experience and technical background",
   openGraph: {
     title: "About | Aaditya Mishra",
-    url: "http://localhost:3000/about",
+    url: "https://aadityamishra.in/about",
     description:
       "Learn more about my skills, experience and technical background",
     images:
@@ -42,8 +40,6 @@ export default async function About() {
               <div className="order-2 lg:order-none">
                 <Slide>
                   <h1 className="font-incognito font-semibold tracking-tight sm:text-5xl text-3xl lg:leading-tight basis-1/2 mb-8">
-                    {/* I&apos;m {data.fullName}. I live in {data.location}, where I
-                    build the future. */}
                     About Me
                   </h1>
 
@@ -106,7 +102,6 @@ export default async function About() {
             <Slide delay={0.14}>
               <Job />
             </Slide>
-            {/* <Heroes /> */}
           </div>
         ))}
     </main>

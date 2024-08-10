@@ -60,7 +60,7 @@ export default function ContributionGraph() {
             }
           />
         ))}
-      </div>
+      </div>c
     </div>
   );
 }

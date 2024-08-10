@@ -5,7 +5,6 @@ import { Slide } from "./animation/Slide";
 import { sanityFetch } from "@/lib/sanity.client";
 import ContributionGraph from "./components/pages/GithubCalendarComponent";
 import HeroSvg from "./assets/icons/HeroSvg";
-import Job from "./components/pages/Job";
 import Usage from "./components/pages/Usage";
 
 export default async function Home() {
