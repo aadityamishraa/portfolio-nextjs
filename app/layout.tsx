@@ -21,7 +21,7 @@ const options = {
     "Aaditya Mishra is a Frontend Developer and Designer who is passionate about building solutions and contributing to open source communities",
   url: "https://aadityamishra.in",
   ogImage:
-    "https://res.cloudinary.com/dnxtiwx4g/image/upload/v1723312991/portfolio/pj1c0ihpnba1iplmbomz.png",
+    "https://res.cloudinary.com/dnxtiwx4g/image/upload/v1723312991/portfolio/website_image.png",
 };
 
 export const metadata: Metadata = {

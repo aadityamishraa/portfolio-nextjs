@@ -9,15 +9,15 @@ import { sanityFetch } from "@/lib/sanity.client";
 import PageHeading from "../components/shared/PageHeading";
 
 export const metadata: Metadata = {
-  title: "Project | Aaditya Mishra",
-  metadataBase: new URL("https://victoreke.com/projects"),
-  description: "Explore projects built by Victor Eke",
+  title: "Projects | Aaditya Mishra",
+  metadataBase: new URL("https://aadityamishra.in/projects"),
+  description: "Explore projects built by Aaditya Mishra",
   openGraph: {
-    title: "Projects | Victor Eke",
-    url: "https://victoreke.com/projects",
-    description: "Explore projects built by Victor Eke",
+    title: "Projects | Aaditya Mishra",
+    url: "https://aadityamishra.in/projects",
+    description: "Explore projects built by Aaditya Mishra",
     images:
-      "https://res.cloudinary.com/victoreke/image/upload/v1692636087/victoreke/projects.png",
+      "https://res.cloudinary.com/dnxtiwx4g/image/upload/v1723332712/portfolio/project_img.png",
   },
 };
 

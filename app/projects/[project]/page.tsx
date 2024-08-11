@@ -16,31 +16,31 @@ type Props = {
 };
 
 const fallbackImage: string =
-  "https://res.cloudinary.com/victoreke/image/upload/v1692636087/victoreke/projects.png";
+  "https://res.cloudinary.com/dnxtiwx4g/image/upload/v1723332712/portfolio/project_img.png";
 
 // Dynamic metadata for SEO
-// export async function generateMetadata({ params }: Props): Promise<Metadata> {
-//   const slug = params.project;
-//   const project: ProjectType = await sanityFetch({
-//     query: singleProjectQuery,
-//     tags: ["project"],
-//     qParams: { slug },
-//   });
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const slug = params.project;
+  const project: ProjectType = await sanityFetch({
+    query: singleProjectQuery,
+    tags: ["project"],
+    qParams: { slug },
+  });
 
-//   return {
-//     title: `${project.name} | Project`,
-//     metadataBase: new URL(`https://victoreke.com/projects/${project.slug}`),
-//     description: project.tagline,
-//     openGraph: {
-//       images: project.coverImage
-//         ? urlFor(project.coverImage.image).width(1200).height(630).url()
-//         : fallbackImage,
-//       url: `https://victoreke.com/projects/${project.slug}`,
-//       title: project.name,
-//       description: project.tagline,
-//     },
-//   };
-// }
+  return {
+    title: `${project.name} | Project`,
+    metadataBase: new URL(`https://aadityamishra.in/projects/${project.slug}`),
+    description: project.tagline,
+    openGraph: {
+      images: project.coverImage
+        ? urlFor(project.coverImage.image).width(1200).height(630).url()
+        : fallbackImage,
+      url: `https://aadityamishra.in/${project.slug}`,
+      title: project.name,
+      description: project.tagline,
+    },
+  };
+}
 
 export default async function Project({ params }: Props) {
   const slug = params.project;
