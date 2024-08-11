@@ -19,15 +19,15 @@ const images = [
 ];
 
 export const metadata: Metadata = {
-  title: "Contact | Victor Eke",
-  metadataBase: new URL("https://victoreke.com/Contact"),
-  description: "Explore Contact taken by Victor Eke",
+  title: "Contact | Aaditya Mishra",
+  metadataBase: new URL("https://aadityamishra.in/contact"),
+  description: "Contact Aaditya Mishra",
   openGraph: {
-    title: "Contact | Victor Eke",
-    url: "https://victoreke.com/Contact",
-    description: "Explore Contact taken by Victor Eke",
+    title: "Contact | Aaditya Mishra",
+    url: "https://aadityamishra.in/contact",
+    description: "Contact Aaditya Mishra",
     images:
-      "https://res.cloudinary.com/victoreke/image/upload/v1692635149/victoreke/Contact.png",
+      "https://res.cloudinary.com/dnxtiwx4g/image/upload/v1723312991/portfolio/website_image.png",
   },
 };
 
