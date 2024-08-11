@@ -181,7 +181,7 @@ export default async function Post({ params }: Props) {
                     rel="noreferrer noopener"
                     target="_blank"
                   >
-                    {`@${post.author.twitterUrl.split("twitter.com/")[1]}`}
+                    {`@${post.author.twitterUrl.split("https://x.com/")[1]}`}
                   </a>
                 </div>
               </address>
