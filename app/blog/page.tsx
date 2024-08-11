@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     url: "https://aadityamishra.in/blog",
     description: "Read latest stories from Aaditya Mishra's Blog",
     images:
-      "https://res.cloudinary.com/dnxtiwx4g/image/upload/v1723313825/portfolio/blog_image.png",
+      "https://res.cloudinary.com/dnxtiwx4g/image/upload/v1723339587/portfolio/blog_img.png",
   },
 };
 
