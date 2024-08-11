@@ -29,54 +29,54 @@ const fallbackImage: string =
   "https://res.cloudinary.com/dnxtiwx4g/image/upload/v1723313825/portfolio/blog_image.png";
 
 // Dynamic metadata for SEO
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const slug = params.post;
-  const post: PostType = await sanityFetch({
-    query: singlePostQuery,
-    tags: ["Post"],
-    qParams: { slug },
-  });
+// export async function generateMetadata({ params }: Props): Promise<Metadata> {
+//   const slug = params.post;
+//   const post: PostType = await sanityFetch({
+//     query: singlePostQuery,
+//     tags: ["Post"],
+//     qParams: { slug },
+//   });
 
-  if (!post) {
-    notFound();
-  }
+//   if (!post) {
+//     notFound();
+//   }
 
-  return {
-    title: `${post.title}`,
-    metadataBase: new URL(`https://aadityamishra.in/blog/${post.slug}`),
-    description: post.description,
-    publisher: post.author.name,
-    keywords: post.tags,
-    alternates: {
-      canonical:
-        post.canonicalLink || `https://aadityamishra.in/blog/${post.slug}`,
-    },
-    openGraph: {
-      images:
-        urlFor(post.coverImage?.image).width(1200).height(630).url() ||
-        fallbackImage,
-      url: `https://aadityamishra.in/blog/${post.slug}`,
-      title: post.title,
-      description: post.description,
-      type: "article",
-      siteName: "aadityamishra.in",
-      authors: post.author.name,
-      tags: post.tags,
-      publishedTime: post._createdAt,
-      modifiedTime: post._updatedAt || "",
-    },
-    twitter: {
-      title: post.title,
-      description: post.description,
-      images:
-        urlFor(post.coverImage?.image).width(680).height(340).url() ||
-        fallbackImage,
-      creator: `@${post.author.twitterUrl.split("twitter.com/")[1]}`,
-      site: `@${post.author.twitterUrl.split("twitter.com/")[1]}`,
-      card: "summary_large_image",
-    },
-  };
-}
+//   return {
+//     title: `${post.title}`,
+//     metadataBase: new URL(`https://aadityamishra.in/blog/${post.slug}`),
+//     description: post.description,
+//     publisher: post.author.name,
+//     keywords: post.tags,
+//     alternates: {
+//       canonical:
+//         post.canonicalLink || `https://aadityamishra.in/blog/${post.slug}`,
+//     },
+//     openGraph: {
+//       images:
+//         urlFor(post.coverImage?.image).width(1200).height(630).url() ||
+//         fallbackImage,
+//       url: `https://aadityamishra.in/blog/${post.slug}`,
+//       title: post.title,
+//       description: post.description,
+//       type: "article",
+//       siteName: "aadityamishra.in",
+//       authors: post.author.name,
+//       tags: post.tags,
+//       publishedTime: post._createdAt,
+//       modifiedTime: post._updatedAt || "",
+//     },
+//     twitter: {
+//       title: post.title,
+//       description: post.description,
+//       images:
+//         urlFor(post.coverImage?.image).width(680).height(340).url() ||
+//         fallbackImage,
+//       creator: `@${post.author.twitterUrl.split("twitter.com/")[1]}`,
+//       site: `@${post.author.twitterUrl.split("twitter.com/")[1]}`,
+//       card: "summary_large_image",
+//     },
+//   };
+// }
 
 export default async function Post({ params }: Props) {
   const slug = params.post;

@@ -1,12 +1,10 @@
 "use client";
 import Link from "next/link";
-import Image from "next/image";
 import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import {
   HiBeaker,
   HiBookmarkAlt,
-  HiCamera,
   HiOutlineX,
   HiUser,
 } from "react-icons/hi";
@@ -30,9 +28,9 @@ export default function MobileMenu() {
       icon: HiBookmarkAlt,
     },
     {
-      title: "Photos",
-      href: "/photos",
-      icon: HiCamera,
+      title: "Contact",
+      href: "/contact",
+      icon: HiUser,
     },
   ];
 
