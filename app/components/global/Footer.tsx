@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <UnmountStudio>
       <footer className="border-t dark:border-zinc-800 border-zinc-100 mt-28 min-h-full relative">
-        <div className="max-w-7xl mx-auto flex lg:flex-row flex-col items-center lg:justify-between justify-center md:px-16 py-2">
+        <div className="max-w-7xl mx-auto flex lg:flex-row flex-col items-center lg:justify-between justify-center md:px-16 py-8 sm:py-2">
           <Social type="social" />
           <div className="flex flex-col lg:items-end items-center lg:text-start text-center">
             <small className="text-zinc-500">
