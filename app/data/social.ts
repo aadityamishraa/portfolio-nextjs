@@ -23,6 +23,6 @@ export const socialLinks = [
     name: "Resume",
     url: "https://www.linkedin.com/in/aadityamishraa/",
     icon: BiFile,
-    status: "social",
+    status: "resume",
   }
 ];
