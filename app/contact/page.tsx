@@ -27,7 +27,7 @@ export default function Contact() {
         <Slide delay={0.12} className="flex flex-wrap gap-2">
           <div className="w-full md:w-1/3 p-8 dark:bg-primary-bg bg-zinc-50 border border-transparent dark:hover:border-zinc-700 hover:border-zinc-200 rounded-lg">
             <form
-              action="https://formsubmit.co/aadityamishra216@gmail.com"
+              action="https://formsubmit.com/db029a55bb2e015170b7ececeb43b58d"
               method="POST"
               className="flex flex-col gap-4"
               autoComplete="off"
