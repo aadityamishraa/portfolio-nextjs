@@ -47,6 +47,7 @@ export default function Contact() {
                 required
               />
               <textarea
+                name="message"
                 className="h-40 w-full rounded-lg p-4 resize-none overflow-y-auto focus:outline-none focus:border-zinc-200 dark:focus:border-zinc-700"
                 placeholder="Say me Hi! 😊"
               ></textarea>
