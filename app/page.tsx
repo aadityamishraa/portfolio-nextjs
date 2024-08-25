@@ -27,8 +27,9 @@ export default async function Home() {
                   {data.shortBio}
                 </p>
               </Slide>
-              <Slide delay={0.1}>
+              <Slide delay={0.1} className="flex gap-x-8">
                 <Social type="social" />
+                <Social type="resume" />
               </Slide>
             </div>
           ))}

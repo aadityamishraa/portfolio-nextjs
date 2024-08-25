@@ -21,7 +21,7 @@ export const socialLinks = [
   {
     id: 3,
     name: "Resume",
-    url: "https://www.linkedin.com/in/aadityamishraa/",
+    url: "https://drive.google.com/file/d/1N9FldNcc3n1opIOCKt81vgUdAQrX8zsY/view?usp=sharing",
     icon: BiFile,
     status: "resume",
   }
