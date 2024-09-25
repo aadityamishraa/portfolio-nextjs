@@ -26,3 +26,4 @@ export const socialLinks = [
     status: "resume",
   }
 ];
+//
