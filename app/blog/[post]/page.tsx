@@ -28,7 +28,7 @@ type Props = {
 const fallbackImage: string =
   "https://res.cloudinary.com/dnxtiwx4g/image/upload/v1723339587/portfolio/blog_img.png";
 
-// Dynamic metadata for SEO
+// Dynamic metadata for SEO performance
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const slug = params.post;
   const post: PostType = await sanityFetch({
