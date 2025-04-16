@@ -6,6 +6,7 @@ import { sanityFetch } from "@/lib/sanity.client";
 import ContributionGraph from "./components/pages/GithubCalendarComponent";
 import HeroSvg from "./assets/icons/HeroSvg";
 import Usage from "./components/pages/Usage";
+import Job from "./components/pages/Job";
 
 export default async function Home() {
   const profile: ProfileType[] = await sanityFetch({
@@ -15,7 +16,7 @@ export default async function Home() {
 
   return (
     <main className="max-w-7xl mx-auto md:px-16 px-6">
-      <section className="xl:h-[70vh] flex xl:flex-row flex-col xl:items-center items-start xl:justify-center justify-between gap-x-12 mb-16 ">
+      <section className="xl:h-[70vh] flex xl:flex-row flex-col xl:items-center items-start xl:justify-center justify-between gap-x-12 ">
         {profile &&
           profile.map((data) => (
             <div key={data._id} className="lg:max-w-2xl max-w-2xl">
@@ -37,7 +38,9 @@ export default async function Home() {
           <HeroSvg />
         </Slide>
       </section>
-      <ContributionGraph />
+      {/* <ContributionGraph /> */}
+      <Job/>
+      <div className="py-12"></div>
       <Usage/>
      
     </main>

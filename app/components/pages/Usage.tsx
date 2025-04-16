@@ -14,8 +14,7 @@ export default async function Usage() {
       <div className="mb-4">
         <h2 className="text-4xl mb-4 font-bold tracking-tight">Usage</h2>
         <p className="dark:text-zinc-400 text-zinc-600 max-w-xl">
-          Tools, technologies and gadgets I use on a daily basis but not limited
-          to.
+          Tools and approaches I use on a daily basis but not limited to.
         </p>
       </div>
       {profile.map((textBlock, id) => (
